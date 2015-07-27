@@ -164,3 +164,11 @@ $colors: "AliceBlue",
     }
   }
 }
+
+.border {
+  @each $color in $colors {
+    &.#{$color}{
+      border-color: #{$color}
+    }
+  }
+}
